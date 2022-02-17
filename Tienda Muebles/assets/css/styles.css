@@ -14,12 +14,24 @@ a {
     color: #000;
 }
 
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 
 /** Header y Navegacion **/
 
 .nombre-sitio {
-    padding: 100px 0;
+    padding: 50px 0;
+    margin: 0;
     text-align: center;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .nombre-sitio span {
@@ -27,7 +39,41 @@ a {
 }
 
 .nav-principal {
-    border-color: #000;
-    border-style: solid;
-    border-width: 1px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    height: 550px;
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/** Categorías **/
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+}
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
